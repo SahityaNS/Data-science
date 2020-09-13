@@ -12,10 +12,10 @@ types of regression analysis:
 * It is assumed there is a linear relationship between dependent and independent variables.
 * We shall try to find the best fit line that represents the linear function.
 * The equation of the best fit line has the form Y= a + bX
-  Y - dependent variable
-  X - independent variable
-  a - y intercept
-          
+  - Y - dependent variable
+  - X - independent variable
+  - a - y intercept
+        
 * Steps:
   - Data Preprocessing
   - Building a model on training dataset
@@ -35,7 +35,6 @@ types of regression analysis:
   Little or no multicollinearity is assumed 
 * We shall try to find the best fit line that represents the linear function.
 * The equation of the best fit line has the form y = b1x1 + b2x2 + … + bnxn + c.
-  Y - dependent variable
-  X - independent variable
-  a - y intercept
-
+  - Y - dependent variable
+  - X - independent variable
+  - a - y intercept
