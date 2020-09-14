@@ -45,7 +45,51 @@ types of regression analysis:
   - Evaluation
   
 ## Support Vector Regression
+![SVR regression](https://user-images.githubusercontent.com/58341480/93008890-c27c1500-f597-11ea-8575-c23ee21d9d4d.png)
 * In most linear regression models, the objective is to minimize the sum of squared errors.
 * But, SVR gives us the flexibility to define how much error is acceptable in our model and will find an appropriate line (or hyperplane in higher dimensions) to fit the data.
 * Instead of minimizing the observed training error, Support Vector Regression (SVR) attempts to minimize the generalization error bound so as to achieve generalized performance.
-* The idea of SVR is based on the computation of a linear regression function in a high dimensional feature space where the input data are mapped via a nonlinear function. 
+* The idea of SVR is based on the computation of a linear regression function in a high dimensional feature space where the input data are mapped via a nonlinear function.
+        
+* Steps:
+  - Data Preprocessing
+  - Building a model on training dataset
+  - Predicting the result
+  - Visualization
+  
+## Decision Tree Regression
+![ Decision tree Regression](https://user-images.githubusercontent.com/58341480/93008895-c740c900-f597-11ea-903c-4468d2cad9ca.png)
+
+![example](https://user-images.githubusercontent.com/58341480/93008893-c445d880-f597-11ea-97f1-f277c5ea2728.png)
+
+* It is a type of supervised learning Algorithm
+* It is a tree in which each branch node represents a choice between a no.of alternatives and each leaf node represents a decision.
+* what it does
+  - Cut the data points into slices in several iterations
+  - We split the data and construct a decision tree.
+  - the tree that is obtained by applying algorithms like CART, ID3 will be used to make the predictions
+* Key words
+  * Information gain
+    - The best attribute is the one which gives us the maximum information gain.
+  * Entropy
+      - It is a measure of randomness
+      - how to compute entropy for dataset:
+        1. compute entropy for the data-set
+        2. for every feature 
+            - calculate entropy for all categorical variables
+            - take average information entropy for the current attribute
+            - calculate gain for the current attribute
+        3. pick the highest gain attribute
+        4. repeat until we get the tree we desired
+        
+
+## Random Forest Regression
+* Random forests are supervised ensemble-learning models used for classification and regression.
+* It builds multiple decision trees and merges them together to get a more accurate and stable prediction.
+![ensemble learning](https://user-images.githubusercontent.com/58341480/93008894-c5770580-f597-11ea-8e2b-bf65f5ce8f06.png)
+* The logic beg=hind this algorithm is that each of the models used is weaked when employed on its own, but once they all are put together they become strong.
+* Employing the above logic a large no. of weak decision trees which are weak are aggregated representing the "strong" ensemble
+* steps involved
+  - Creation of the random forest regressor
+  - Make a prediction from the random forest regressor
+* The process of finding the root nide and splitting the feature nodes is what makes random forest from decision trees.
