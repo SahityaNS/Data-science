@@ -38,3 +38,14 @@ types of regression analysis:
   - Y - dependent variable
   - X - independent variable
   - a - y intercept
+* Steps:
+  - Data Preprocessing
+  - Building a model on training dataset
+  - Predicting the result
+  - Evaluation
+  
+## Support Vector Regression
+* In most linear regression models, the objective is to minimize the sum of squared errors.
+* But, SVR gives us the flexibility to define how much error is acceptable in our model and will find an appropriate line (or hyperplane in higher dimensions) to fit the data.
+* Instead of minimizing the observed training error, Support Vector Regression (SVR) attempts to minimize the generalization error bound so as to achieve generalized performance.
+* The idea of SVR is based on the computation of a linear regression function in a high dimensional feature space where the input data are mapped via a nonlinear function. 
